@@ -1,0 +1,138 @@
+/* COLOUR REFERENCES
+
+Green: #79b044
+Salmon: #dd5638
+darker salmon: #d95131
+Blue Gray: #3e4249
+***************************
+Blue: #4978BF
+aqua: #A8EBEF
+red: #C9302C
+orange: #EEC385
+
+*/
+
+h1 {
+  font-family: "proxima-nova",sans-serif;
+  }
+  /*
+.tk-proxima-novadelete
+  */
+
+/*=== GENERAL ===*/
+
+body {
+  margin-top: 50px;
+  font-family: "proxima-nova", "Raleway", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/*=== GENERAL ===*/
+
+h1,h2,h3,h4,h5,h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1,h2 {
+  margin: 0 0 40px;
+}
+
+h3 {
+  margin-left: 20px 0;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.btn {
+  font-weight: bold;
+  background-color: #dd5638;
+
+}
+
+/*=== HERO ===*/
+
+#hero {
+  background: url('../img/surfers.jpg')30% 0 no-repeat fixed;
+  min-height: 500px;
+  padding: 40px 0;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#hero .hero-text {
+  margin-top: 30px;
+}
+
+#hero .hero-text h1.hero {
+  font-size: 4rem;
+}
+
+#hero article {
+  width: 100%;
+  text-align: center;
+}
+
+#price-timeline {
+  margin: 30px 0 60px;
+  text-align: center;
+}
+
+#price-timeline .price {
+  display: inline-block;
+  margin: 0 2% 0 0;
+  width: 30%;
+  background: #3e4249;
+  padding: 20px 20px 30px;
+  position: relative;
+  vertical-align: top;
+}
+
+#price-timeline .price small {
+  display: block;
+}
+
+
+#price-timeline .price.active {
+  background-color: #EEC385;
+}
+
+#price-timeline .price span {
+  background: #101010;
+  display: block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  margin-left: -35px;
+}
+
+#price-timeline h4 {
+  margin: 10px 0 35px;
+}
+
+#price-timeline h4 small {
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#hero .hero-text > p:nth-child(4) > a {
+  margin-top: 20px;
+    border-radius: 3px;
+}

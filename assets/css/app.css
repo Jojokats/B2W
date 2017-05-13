@@ -178,6 +178,10 @@ section h3 {
   background: #f2f2f2;
 }
 
+#who-benefits h3 {
+    color: #688698;
+}
+
 #optin {
   background: #3e4249;
   color: #fff;
@@ -189,6 +193,16 @@ section h3 {
 
 #optin p {
   margin: 7px 0 0 0;
+}
+
+#optin > div > div > div.col-sm-4 > button.subscribe {
+  background-color: #688698;
+  border: none;
+  transition: background-color .3s ease;
+}
+
+#optin > div > div > div.col-sm-4 > button.subscribe:hover {
+  background-color: #3A5866;
 }
 
 #who-benefits {
@@ -211,6 +225,13 @@ section h3 {
 
 #project-features p.features {
   margin-bottom: 60px;
+}
+
+#featurette {
+  background: url('../img/star.jpg') 50% 100% no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
 }
 
 /* CUSTOM ICON SPRITES */

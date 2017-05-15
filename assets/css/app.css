@@ -26,7 +26,7 @@ body {
   font-size: 16px;
 }
 
-/*=== GENERAL ===*/
+/*=== GLOBAL ===*/
 
 h1,h2,h3,h4,h5,h6 {
   -webkit-font-smoothing: antialiased;
@@ -67,6 +67,38 @@ button, input, .btn, a.btn {
 
 img {
   max-width: 100%;
+}
+
+/*.modal-content {
+  background: url('../img/tile.jpg') top left repeat;
+}*/
+
+.badge.social {
+  background: #ccc;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 5px 20px 0;
+  padding: 0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  color: #fff;
+  transition: background-color .3s ease;
+}
+
+.badge.social.twitter:hover {
+  background: #55acee;
+}
+
+.badge.social.facebook:hover {
+  background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+  background: #db4b39;
 }
 
 /*=== HERO ===*/
@@ -117,7 +149,6 @@ img {
 #price-timeline .price small {
   display: block;
 }
-
 
 #price-timeline .price.active {
   background-color: #EEC385;
@@ -233,6 +264,44 @@ section h3 {
   text-align: center;
   color: #fff;
 }
+
+#instructor {
+  background: #fff url('../img/surf-duo-gr.png') 90% 60px no-repeat;
+}
+
+#instructor h2 {
+  margin: 0 0 20px;
+}
+
+#instructor .num {
+  display: table;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fff;
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  background: #dd5638;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#instructor .num .num-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#instructor .num span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+
 
 /* CUSTOM ICON SPRITES */
 

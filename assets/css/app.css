@@ -9,7 +9,6 @@ Blue: #4978BF
 aqua: #A8EBEF
 red: #C9302C
 orange: #EEC385
-
 background: #f2f2f2
 
 -webkit-font-smoothing: antialiased;
@@ -50,6 +49,15 @@ h4 {
   font-size: 18px;
 }
 
+a:link, a:visited {
+  color: #dd5638;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #c9302c;
+}
+
 button, input, .btn, a.btn {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -62,6 +70,18 @@ button, input, .btn, a.btn {
 
 button.btn:focus {
   outline: none !important;
+}
+
+.btn-learn {
+  font-weight: bold;
+  background-color: #7ccfd4;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-learn:hover {
+  background-color: #65c3c8;
+  color: #fff;
 }
 
 .btn-danger {
@@ -158,7 +178,7 @@ blockquote cite {
 #hero article img.logo {
   display: block;
   text-align: left;
-  padding-left: 50px;
+  margin-top: 10px;
 }
 
 #price-timeline {
@@ -220,7 +240,6 @@ blockquote cite {
 
 section {
   padding: 100px 0;
-  border: 1px solid aqua;
 }
 
 .section-header {
@@ -258,13 +277,15 @@ section h3 {
 
 #optin > div > div > div.col-sm-4 > button.subscribe {
   background-color: #688698;
+  background-color: #dd5638;
   border: none;
   transition: background-color .3s ease;
 }
 
 #optin > div > div > div.col-sm-4 > button.subscribe:hover {
-  background-color: #3A5866;
-  border-color: #3A5866;
+  background-color: #c85137;
+  border-color: #c85137;
+  color: #fff;
 }
 
 #who-benefits {
@@ -333,6 +354,7 @@ section h3 {
 }
 
 #kudos {
+  background-color: #f2f2f2;
   text-align: center;
 }
 
@@ -367,10 +389,53 @@ section h3 {
 
 #signup .btn {
   font-size: 2rem;
+  background-color: #dd5638;
+  transition: background-color .3s ease;
 }
 
+#signup .btn:hover {
+  background-color: #c85137;
+  border-color: #c85137;
+}
 
+footer {
+  background: #3e4249;
+  color: #fff;
+  padding: 20px 0 10px;
+  font-size: 1.4rem;
+}
 
+footer p {
+  margin: 0;
+}
+
+footer nav ul li a {
+  cursor: pointer;
+}
+
+footer a:link, footer a:visited {
+  color: #fff;
+  transition: all .3s ease;
+}
+
+footer a:hover {
+  color: #dd5638;
+}
+
+footer nav > ul > li:nth-child(5) > a {
+  color: #dd5638;
+
+}
+
+footer nav > ul > li:nth-child(5) > a:hover {
+  font-weight: bold;
+}
+
+footer > div > div:nth-child(3) > p{
+  font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
 
 

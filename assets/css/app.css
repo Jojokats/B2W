@@ -489,6 +489,12 @@ i.ci {
   }
 }
 
+@media screen and ( min-width: 769px ) {
+  footer .mylogo {
+    padding-left: 0;
+  }
+}
+
 @media screen and ( max-width: 768px ) {
 
   #hero article img.logo {
@@ -526,6 +532,7 @@ i.ci {
   #instructor .num span {
     font-size: 1.6rem;
   }
+
   footer .mylogo {
     margin-bottom: 10px;
   }

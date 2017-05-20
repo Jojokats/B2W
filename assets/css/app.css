@@ -84,6 +84,7 @@ button.btn:focus {
   font-weight: bold;
   background-color: #7ccfd4;
   border: none;
+  margin: 20px 0 30px;
   transition: all 0.3s ease;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
@@ -99,15 +100,15 @@ button.btn:focus {
 }
 
 .btn-success {
-  background-color: #79b044;
-  background-color: #688698;
+  background-color: #7ccfd4;
   border: none;
+  padding: 10px 20px;
   transition: all .3s ease;
 }
 
 .btn-success:hover {
-  background-color: #3A5866;
-  border-color: #3A5866;
+  background-color: #65c3c8;
+  border-color: #65c3c8;
 }
 
 img {
@@ -261,6 +262,10 @@ section {
   padding: 100px 0;
 }
 
+section.main-content {
+  padding: 40px 0;
+}
+
 .section-header {
   text-align: center;
 }
@@ -285,6 +290,7 @@ section h3 {
 
 .feature-image-default {
   background: url('../img/stuff-feature.jpg') no-repeat;
+  background: url('../img/wood.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -490,7 +496,7 @@ footer > div > div:nth-child(3) > p{
 
 /*=== BLOG ===*/
 
-.post, .widget {
+.post, .widget, #comments {
   position: relative;
   border: solid 1px #ddd;
   background: #fff;
@@ -501,7 +507,9 @@ footer > div > div:nth-child(3) > p{
 }
 
 .post header,
-.post .post-excerpt {
+.post .post-excerpt,
+.post .post-body,
+#comments .comments-wrap {
   padding: 20px;
 }
 
@@ -600,6 +608,55 @@ footer > div > div:nth-child(3) > p{
   background-color: #65c3c8;
 }
 
+#comments h3 {
+  text-align: center;
+}
+
+#comments h4 {
+  font-size: 1.3em;
+}
+
+#comments ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#comments ol li {
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 20px;
+  margin: 10px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+#comments ol li ol.children {
+  padding: 0;
+  list-style: none;
+  font-size: 0.96em;
+}
+
+#leave-comment {
+  margin: 40px 0 0;
+  padding: 20px 0 0;
+  border-top: solid 1px #eee;
+}
+
+
+/*=== RESOURCES ===*/
+
+.resource {
+	width: 31.33333333%;
+	float: left;
+	margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+  margin-right: 0;
+}
+
 
 
 /*=== CUSTOM ICON SPRITES ===*/
@@ -644,6 +701,36 @@ textarea {
   padding-left: 6px 12px;
 }
 
+input[type="submit"],
+button[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+  background: #7ccfd4;
+	border: none;
+	border-radius: 6px;
+  padding: 7px 18px;
+  transition: all .2s ease;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+	outline: none;
+	border: none;
+  background-color: #65c3c8;
+}
 
 /*=== MEDIA QUERIES ===*/
 
@@ -684,6 +771,13 @@ textarea {
   #kudos .avatar {
     margin-bottom: 30px;
   }
+
+  .resource {
+    width: 48%;
+    margin-right: 2%;
+    min-height: 850px;
+  }
+
 }
 
 @media screen and ( max-width: 568px ) {
@@ -696,6 +790,12 @@ textarea {
 
   #instructor .num span {
     font-size: 1.6rem;
+  }
+
+  .resource {
+    width: 100%;
+    margin-right: 0;
+    min-height: 0;
   }
 
   footer .mylogo {

@@ -531,7 +531,7 @@ footer > div > div:nth-child(3) > p{
 .post-details {
   font-size: 12px;
   font-size: 1.4rem;
-  /*width: 90%;*/
+  width: 90%;
 }
 
 .post-details i.fa {
@@ -542,6 +542,7 @@ footer > div > div:nth-child(3) > p{
 .post-details i.fa:first-child {
   padding: 0 4px 0 0;
 }
+
 
 /*=== WIDGETS ===*/
 
@@ -719,10 +720,11 @@ button[type="submit"] {
 	background-image: none;
   background: #7ccfd4;
 	border: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
 	border-radius: 6px;
   padding: 7px 18px;
   transition: all .2s ease;
-  margin-top: 10px;
 }
 
 input[type="submit"]:hover,
